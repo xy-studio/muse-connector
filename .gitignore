@@ -1,0 +1,17 @@
+token.txt
+*.log
+__pycache__/
+*.pyc
+.cloudflared/
+config.local.yml
+config.local.json
+cloudflared.exe
+cloudflared-winagent.yml
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+.openbitfun/
+Thumbs.db
+Desktop.ini

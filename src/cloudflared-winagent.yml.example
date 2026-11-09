@@ -1,0 +1,11 @@
+# Cloudflared 隧道配置模板
+# 复制为 cloudflared-winagent.yml 并填入你自己的隧道信息：
+#   cloudflared tunnel create <tunnel-name>
+#   cloudflared tunnel route dns <tunnel-name> <your-hostname>
+
+tunnel: YOUR-TUNNEL-ID-HERE
+credentials-file: C:\Users\<YourUser>\.cloudflared\<tunnel-id>.json
+ingress:
+  - hostname: your-hostname.example.com
+    service: http://127.0.0.1:18789
+  - service: http_status:404
